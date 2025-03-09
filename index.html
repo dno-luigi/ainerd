@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ai-n.org</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer-styles.css">
+  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.15.3-web/css/all.min.css">
+  <script src="marked.min.js"></script>
+  <script src="config.js"></script>
+  <style>
+    body {
+      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      min-height: 4rem;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .prompt-input {
+      width: 100%;
+      font-size: 1.3rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #f0f0f0;
+      resize: none;
+      overflow-y: auto;
+    }
+    
+    .site-title {
+      font-size: 2.5rem;
+    }
+    
+    footer {
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+      padding: 0.05rem 0;
+      background-color: #000000;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="moon-icon">
+      <i class="fas fa-moon"></i>
+    </div>
+    <main class="main">
+      <h1 class="site-title">ai-n.org</h1>
+      <div class="input-container">
+        <textarea id="promptInput" class="prompt-input" placeholder="pragmatic, personal, private ai&#10;as above so below" style="height: auto; min-height: 4rem; font-size: 1.3rem; padding: 1rem; width: 600px;"></textarea>
+        <div id="response" class="response-area"></div>
+      </div>
+    </main>
+  </div>
+  <footer style="margin-top: 3rem;">
+    <div class="footer-links" style="font-size: 0.8rem; text-align: center;">
+      <a href="about.html" class="footer-link">About</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+      <a href="privacy.html" class="footer-link">Privacy</a>
+      <a href="terms.html" class="footer-link">Terms</a>
+    </div>
+    <div class="copyright" style="font-size: 1.5rem; margin-top: 1rem;">
+      © 2025 all rights reserved
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
